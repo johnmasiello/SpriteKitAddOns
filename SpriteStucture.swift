@@ -67,6 +67,7 @@ struct SpriteKitRect {
     }
     
     init(cgRect: CGRect) {
+        // Adapt SpriteKitRect to Core Graphics Rectangle
         self.origin = CGPointMake(cgRect.midX, cgRect.midY)
         self.size = cgRect.size
     }
