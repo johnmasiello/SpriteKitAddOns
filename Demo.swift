@@ -64,7 +64,8 @@ class DemoScene: SKScene {
         // Demo SpriteKitRect
         
         // Draw a label node in the center of the scene. It would be handy if the center were referenced from frame's origin.
-        // The view's (or node's) frame stores in a CGRect, which defines origin as top or bottom left corner.
+        // The view's (or node's) frame stores in a CGRect, which uses a different origin, which is either top or bottom 
+        // left corner.
         
         let labelFrame = SpriteKitRect(cgRect: self.frame)
         let label = SKLabelNode(text: "Demo SpriteKit Rectangle")
