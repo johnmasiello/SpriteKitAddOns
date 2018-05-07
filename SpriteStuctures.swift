@@ -19,7 +19,8 @@ import SpriteKit
 
 struct SpriteKitRect {
     /**
-     - The point that is equidistant to all points on the rectangle; the center
+     - The point (x, y) such that [x is the midpoint between left and right bounds], 
+       [y is the midpoint between top and bottom bounds]; ie, the center
      - Handy for setting the sprite's position, ie SKNode.position = self.origin
      */
     var origin: CGPoint
